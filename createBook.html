@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Book.js"></script>
+    <script src="src/view/createBook.js"></script>
+    <script>
+        window.addEventListener("load", pl.view.createBook.setupUserInterface);
+    </script>
+    <style>
+        form {
+            margin: 20px;
+            border: 0.1px rgb(240, 236, 236) solid;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #7d8b92;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Create a new book record</h1>
+    <form id="Book">
+        <div class="form-group">
+            <label for="ISBN">ISBN:</label>
+            <input name="isbn" type="text" class="form-control" id="isbn" aria-describedby="titleHelp" placeholder="Enter ISBN" #newtitle>
+        </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input name="title" type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Enter Title" #newtitle>
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input name="year" type="text" class="form-control" id="year" aria-describedby="titleHelp" placeholder="Enter Year" #newtitle>
+        </div>
+
+        <button class="btn btn-outline-success" type="button" name="commit">Save</button>
+    </form>
+    <nav>
+        <a href="index.html">Back to main menu</a>
+    </nav>
+</body>
+
+</html>
